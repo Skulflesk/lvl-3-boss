@@ -16,7 +16,7 @@ ball.radius = 10;
 ball.color = "black";
 ball.force = 5;
 ball.vx = 0;
-ball.vy = -5;
+ball.vy = -10;
 
 var score = 10;
 var keys = {};
@@ -82,27 +82,27 @@ function moveBall()
         if (hit < 1 / 6)
         {
             ball.vx = -ball.force * 5;
-            ball.vy = -35;
+            ball.vy = -10;
         }
         else if (hit < 1 / 3)
         {
             ball.vx = -ball.force;
-            ball.vy = -35;
+            ball.vy = -10;
         }
         else if (hit < 2 / 3)
         {
             ball.vx = 0;
-            ball.vy = -35;
+            ball.vy = -10;
         }
         else if (hit < 5 / 6)
         {
             ball.vx = ball.force;
-            ball.vy = -35;
+            ball.vy = -10;
         }
         else
         {
             ball.vx = ball.force * 5;
-            ball.vy = -35;
+            ball.vy = -10;
         }
 
         score += 10;
@@ -113,7 +113,7 @@ function moveBall()
         ball.x = canvas.width / 2;
         ball.y = 250;
         ball.vx = 0;
-        ball.vy = -5;
+        ball.vy = -10;
     }
 }
 
