@@ -1,3 +1,4 @@
+
 function GameObject()
 {
     this.x = 20;
@@ -5,7 +6,8 @@ function GameObject()
     this.width = 10;
     this.height = 100;
     this.radius = 10;
-    this.color = "white";
+    this.color = "black";
+    this.force = 5;
 
     this.drawCircle = function()
     {
