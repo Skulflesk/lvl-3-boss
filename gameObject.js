@@ -2,7 +2,7 @@ function GameObject()
 {
     this.x = 20;
     this.y = 20;
-    this.width = 30;
+    this.width = 10;
     this.height = 100;
     this.radius = 10;
     this.color = "white";
@@ -10,7 +10,7 @@ function GameObject()
     this.drawCircle = function()
     {
         context.beginPath();
-        context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        context.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
         context.fillStyle = this.color;
         context.fill();
     };
