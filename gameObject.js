@@ -1,0 +1,23 @@
+function GameObject()
+{
+    this.x = 20;
+    this.y = 20;
+    this.width = 30;
+    this.height = 100;
+    this.radius = 10;
+    this.color = "white";
+
+    this.drawCircle = function()
+    {
+        context.beginPath();
+        context.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+        context.fillStyle = this.color;
+        context.fill();
+    };
+
+    this.drawRect = function()
+    {
+        context.fillStyle = this.color;
+        context.fillRect(this.x, this.y, this.width, this.height);
+    };
+}
